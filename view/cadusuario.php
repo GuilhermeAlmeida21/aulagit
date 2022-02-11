@@ -1,44 +1,44 @@
 <?php
 include_once("header.php");
 ?>
- <div class="container">
-<div class="row g-3">
-  <div class="col-6">
+
+  <div class="container">
+ <form class="row g-3" action="../controler/inserircadastro.php" method="Get">
+
+  <div class="col-md-6">
   <label for="inputName" class="form-label">Nome</label>
-    <input type="text" class="form-control" placeholder="" aria-label="First name">
+    <input type="text" name="nomeusu" class="form-control"  id="inputname" aria-label="First name">
   </div>
   <div class="col-5">
     <label for="inputcpf" class="form-label">CPF</label>
-    <input type="text" class="form-control" id="inputcpf"  placeholder="333.333.333-33">
+    <input type="text" name="cpfusu" class="form-control" id="inputcpf"  placeholder="333.333.333-33">
   </div>
- 
-</div>
-<form class="row g-3">
+
   <div class="col-6">
-    <label for="inputEmail4" class="form-label">Email</label>
-    <input type="email" class="form-control" id="inputEmail4">
+    <label for="inputemail" class="form-label">Email</label>
+    <input type="email" name="emailusu" class="form-control" id="inputemail">
   </div>
   <div class="col-5">
     <label for="inputFone" class="form-label">Telefone</label>
-    <input type="text" class="form-control" id="inputFone"  placeholder="(11) 99999-9999">
+    <input type="text" name="foneusu" class="form-control" id="inputFone"  placeholder="(11) 99999-9999">
   </div>
   <div class="col-3">
-    <label for="inputCEP" class="form-label">CEP</label>
-    <input type="text" class="form-control" id="inputCEP" placeholder="01234-567">
+    <label for="inputcep" class="form-label">CEP</label>
+    <input type="text" name="cepusu" class="form-control" id="inputcep" placeholder="01234-567">
   </div>
   <div class="col-3">
-    <label for="inputnum" class="form-label">Número</label>
-    <input type="text" class="form-control" id="inputnum">
+    <label for="inputnum" class="form-label">Número da residência</label>
+    <input type="text" name="numusu" class="form-control" id="inputnum">
   </div>
   <div class="col-5">
-    <label for="inputcomp" class="form-label">Complemento</label>
-    <input type="text" class="form-control" id="inputcomp">
+    <label for="inputcomple" class="form-label">Complemento</label>
+    <input type="text" name="compleusu" class="form-control" id="inputcomple">
   </div>
  
 
   <div class="col-md-4">
     <label for="inputState" class="form-label">Tipo de Usuário</label>
-    <select id="inputState" class="form-select">
+    <select id="inputState" name="tipousu" class="form-select">
       <option selected>Escolha...</option>
       <option value="1">Funcionário</option>
       <option value="2">Cliente</option>
